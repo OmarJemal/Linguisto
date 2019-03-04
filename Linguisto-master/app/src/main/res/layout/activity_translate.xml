@@ -2,22 +2,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".Translate">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_weight="9"
-        android:layout_height="fill_parent"
-        android:layout_width="match_parent" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:layout_weight="1"
+        android:minHeight="800dp">
+
+        <SurfaceView
+            android:id="@+id/surfaceView2"
+            android:layout_width="411dp"
+            android:layout_height="639dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="209dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="177dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="176dp"
+            android:layout_marginBottom="439dp"
+            android:text="@string/textview"
+            android:textColor="@color/Red"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
 
     <Button
         android:id="@+id/btnCamera"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Camera"/>
+        android:layout_height="94dp"
+        android:layout_weight="1"
+        android:text="@string/camera"
+        tools:layout_editor_absoluteY="722dp" />
+
 </LinearLayout>
