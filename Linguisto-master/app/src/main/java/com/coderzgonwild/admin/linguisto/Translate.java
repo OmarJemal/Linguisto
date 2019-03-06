@@ -126,7 +126,7 @@ public class Translate extends AppCompatActivity {
                 null);
 
         visionBuilder.setVisionRequestInitializer(
-                new VisionRequestInitializer("AIzaSyCS_TW8v8UifqjE6bhFnQyRS1FO2sRPb9o"));
+                new VisionRequestInitializer(API KEY));
 
         //builds the vision class
         final Vision vision = visionBuilder.build();
